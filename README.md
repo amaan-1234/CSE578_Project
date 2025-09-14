@@ -6,21 +6,6 @@ A modern, interactive debate website exploring the question: **"Are space missio
 
 [![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-000000?style=for-the-badge&logo=vercel)](https://cse578-project.vercel.app)
 
-## 📋 Table of Contents
-
-- [Features](#-features)
-- [Technology Stack](#-technology-stack)
-- [Project Structure](#-project-structure)
-- [Installation](#-installation)
-- [Usage](#-usage)
-- [Key Sections](#-key-sections)
-- [Interactive Features](#-interactive-features)
-- [Design Philosophy](#-design-philosophy)
-- [Performance](#-performance)
-- [Browser Support](#-browser-support)
-- [Contributing](#-contributing)
-- [License](#-license)
-
 ## ✨ Features
 
 ### 🎨 Visual Design
@@ -190,30 +175,6 @@ The website is designed to work as a static site and can be deployed to any stat
 - **Memory Usage** - Optimized for long browsing sessions
 - **Battery Life** - Efficient animations to preserve device battery
 
-## 🌐 Browser Support
-
-- **Chrome** 80+ ✅
-- **Firefox** 75+ ✅
-- **Safari** 13+ ✅
-- **Edge** 80+ ✅
-- **Mobile Browsers** ✅
-
-## 🤝 Contributing
-
-We welcome contributions! Please follow these steps:
-
-1. **Fork the repository**
-2. **Create a feature branch** (`git checkout -b feature/amazing-feature`)
-3. **Commit your changes** (`git commit -m 'Add amazing feature'`)
-4. **Push to the branch** (`git push origin feature/amazing-feature`)
-5. **Open a Pull Request**
-
-### Development Guidelines
-- Follow existing code style and conventions
-- Test on multiple browsers and devices
-- Ensure accessibility standards are met
-- Update documentation for new features
-
 ## 📊 Project Statistics
 
 - **Lines of Code**: 2,100+
@@ -232,23 +193,3 @@ This project demonstrates:
 - **User Experience** - Intuitive navigation and feedback
 - **Performance** - Optimized loading and smooth interactions
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👨‍💻 Author
-
-**Amaan** - [GitHub](https://github.com/amaan-1234)
-
-## 🙏 Acknowledgments
-
-- **D3.js Community** - For the amazing visualization library
-- **Unsplash** - For high-quality space imagery
-- **Vercel** - For seamless deployment platform
-- **Space Agencies** - NASA, ESA, JAXA for mission data and inspiration
-
----
-
-**Built with ❤️ for CSE578 - Data Visualization**
-
-*Exploring the cosmos, one debate at a time* 🚀✨
