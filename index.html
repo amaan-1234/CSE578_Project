@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Missions Debate - Are They Necessary?</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Space Missions Debate</h1>
+                <p class="hero-subtitle">Are space missions necessary for humanity's future?</p>
+                <div class="debate-indicators">
+                    <div class="indicator yes-indicator">
+                        <span class="indicator-text">YES</span>
+                    </div>
+                    <div class="indicator vs-indicator">
+                        <span class="vs-text">VS</span>
+                    </div>
+                    <div class="indicator no-indicator">
+                        <span class="indicator-text">NO</span>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </section>
+
+        <!-- Navigation -->
+        <nav class="nav" id="nav">
+            <div class="nav-content">
+                <div class="nav-logo">Space Debate</div>
+                <div class="nav-links">
+                    <a href="#yes" class="nav-link">YES Arguments</a>
+                    <a href="#no" class="nav-link">NO Arguments</a>
+                    <a href="#case-studies" class="nav-link">Case Studies</a>
+                    <a href="#conclusion" class="nav-link">Conclusion</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- YES Arguments Section -->
+        <section class="argument-section yes-section" id="yes">
+            <div class="section-header">
+                <h2 class="section-title yes-title">YES - Support Space Missions</h2>
+                <p class="section-subtitle">Space programs pay for themselves many times over in science, safety, the economy, and long-term resilience</p>
+            </div>
+            
+            <div class="arguments-grid">
+                <div class="argument-card" data-delay="0">
+                    <div class="card-icon">🔬</div>
+                    <h3 class="card-title">Science & Discovery</h3>
+                    <p class="card-content">Nearly 6,000 confirmed exoplanets cataloged thanks to space observatories. JWST measures atmospheric gases like CO₂ and CH₄ on distant worlds. OSIRIS-REx returned 121.6g from asteroid Bennu with organics and water-bearing minerals.</p>
+                    <div class="card-stats">
+                        <span class="stat">6,000+</span>
+                        <span class="stat-label">Exoplanets Found</span>
+                    </div>
+                </div>
+
+                <div class="argument-card" data-delay="200">
+                    <div class="card-icon">🌍</div>
+                    <h3 class="card-title">Everyday Infrastructure</h3>
+                    <p class="card-content">Weather satellites feed forecasts and hurricane tracks. NASA's FIRMS delivers real-time fire detections. A 30-day GPS outage would cost $30.3B in losses. International Charter activated 750+ times for disaster response.</p>
+                    <div class="card-stats">
+                        <span class="stat">$30.3B</span>
+                        <span class="stat-label">GPS Outage Cost</span>
+                    </div>
+                </div>
+
+                <div class="argument-card" data-delay="400">
+                    <div class="card-icon">🌡️</div>
+                    <h3 class="card-title">Climate Action</h3>
+                    <p class="card-content">Satellites quantify CO₂ and methane at facility level. OCO-2/3 target power-plant plumes. Sentinel-5P maps NO₂ pollutants city-by-city. Open data policies accelerate climate product development.</p>
+                    <div class="card-stats">
+                        <span class="stat">Facility-Level</span>
+                        <span class="stat-label">Emissions Tracking</span>
+                    </div>
+                </div>
+
+                <div class="argument-card" data-delay="600">
+                    <div class="card-icon">⚙️</div>
+                    <h3 class="card-title">Tech Spillovers</h3>
+                    <p class="card-content">CMOS image sensors in every smartphone were invented at NASA JPL. Memory foam traces to NASA research. In-space manufacturing is scaling with ZBLAN optical fiber and pharma crystals.</p>
+                    <div class="card-stats">
+                        <span class="stat">CMOS</span>
+                        <span class="stat-label">Camera Technology</span>
+                    </div>
+                </div>
+
+                <div class="argument-card" data-delay="800">
+                    <div class="card-icon">💰</div>
+                    <h3 class="card-title">Economic Growth</h3>
+                    <p class="card-content">Global space economy reached $613B in 2024, growing 7-8% YoY. NASA generated $75.6B US economic output and 305k jobs in FY2023. Moon-to-Mars programs drive regional supply chains.</p>
+                    <div class="card-stats">
+                        <span class="stat">$613B</span>
+                        <span class="stat-label">Global Space Economy</span>
+                    </div>
+                </div>
+
+                <div class="argument-card" data-delay="1000">
+                    <div class="card-icon">🛡️</div>
+                    <h3 class="card-title">Planetary Defense</h3>
+                    <p class="card-content">NASA's DART mission changed Dimorphos' orbit by 33 minutes, proving we can deflect hazardous asteroids. Artemis Accords now have 56 signatories. Space-weather early warning provides 15-60 minutes lead time.</p>
+                    <div class="card-stats">
+                        <span class="stat">33 min</span>
+                        <span class="stat-label">Orbit Change</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cost Analysis Section -->
+            <div class="cost-analysis-section">
+                <h3 class="analysis-title">Costs Are Manageable</h3>
+                <div class="cost-grid">
+                    <div class="cost-card">
+                        <div class="cost-value">0.37%</div>
+                        <div class="cost-label">of US Federal Budget</div>
+                        <div class="cost-detail">NASA's FY2024 budget: $24.9B out of $6.8T total</div>
+                    </div>
+                    <div class="cost-card">
+                        <div class="cost-value">$75.6B</div>
+                        <div class="cost-label">Economic Output</div>
+                        <div class="cost-detail">NASA generated economic activity in FY2023</div>
+                    </div>
+                    <div class="cost-card">
+                        <div class="cost-value">305k</div>
+                        <div class="cost-label">Jobs Created</div>
+                        <div class="cost-detail">Direct and indirect employment from NASA</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NO Arguments Section -->
+        <section class="argument-section no-section" id="no">
+            <div class="section-header">
+                <h2 class="section-title no-title">NO - Limit Space Missions</h2>
+                <p class="section-subtitle">Space programs divert scarce resources while urgent Earth problems go underfunded</p>
+            </div>
+            
+            <div class="arguments-grid">
+                <div class="argument-card" data-delay="0">
+                    <div class="card-icon">⚖️</div>
+                    <h3 class="card-title">Opportunity Cost</h3>
+                    <p class="card-content">NASA's Artemis program: $93 billion through FY2025, $4.1 billion per SLS/Orion launch. Mars Sample Return ballooned to $8-11 billion with delays into the 2030s-2040s, crowding out other science missions like Venus and NEO Surveyor.</p>
+                    <div class="card-stats">
+                        <span class="stat">$93B</span>
+                        <span class="stat-label">Artemis Total Cost</span>
+                    </div>
+                </div>
+
+                <div class="argument-card" data-delay="200">
+                    <div class="card-icon">🏢</div>
+                    <h3 class="card-title">Unequal Benefits</h3>
+                    <p class="card-content">Cost-plus contracts and sole-source awards weaken price discipline. Taxpayers cover catastrophic launch damages above insured levels while profits flow to a small set of contractors (Boeing, Lockheed, Northrop, SpaceX).</p>
+                    <div class="card-stats">
+                        <span class="stat">0.37%</span>
+                        <span class="stat-label">of US Budget</span>
+                    </div>
+                </div>
+
+                <div class="argument-card" data-delay="400">
+                    <div class="card-icon">🌱</div>
+                    <h3 class="card-title">Environmental Harms</h3>
+                    <p class="card-content">Rocket black carbon has 500× the warming efficiency of aviation soot per mass, injected high in the stratosphere. Starship's 2023 test created 385 acres of debris and a 3.5-acre fire in protected lands.</p>
+                    <div class="card-stats">
+                        <span class="stat">500×</span>
+                        <span class="stat-label">Warming Impact</span>
+                    </div>
+                </div>
+
+                <div class="argument-card" data-delay="600">
+                    <div class="card-icon">📊</div>
+                    <h3 class="card-title">Budget Overruns</h3>
+                    <p class="card-content">James Webb Space Telescope: costs nearly doubled to $9.7-10 billion with 7 years of delays. GAO consistently flags flagship cost growth impacting wider science portfolios and reducing mission diversity.</p>
+                    <div class="card-stats">
+                        <span class="stat">95%</span>
+                        <span class="stat-label">JWST Cost Growth</span>
+                    </div>
+                </div>
+
+                <div class="argument-card" data-delay="800">
+                    <div class="card-icon">⚔️</div>
+                    <h3 class="card-title">Militarization Risks</h3>
+                    <p class="card-content">Russia's 2021 ASAT test generated 1,500+ trackable debris pieces. Global counterspace capabilities are advancing across major powers, creating destabilizing trajectories and orbital collision risks.</p>
+                    <div class="card-stats">
+                        <span class="stat">1,500+</span>
+                        <span class="stat-label">Debris Pieces</span>
+                    </div>
+                </div>
+
+                <div class="argument-card" data-delay="1000">
+                    <div class="card-icon">🤖</div>
+                    <h3 class="card-title">Better Substitutes</h3>
+                    <p class="card-content">High-Altitude Pseudo-Satellites (HAPS) and stratospheric balloons provide lower-latency connectivity without orbital debris. Drones perform cost-effective environmental monitoring without launches.</p>
+                    <div class="card-stats">
+                        <span class="stat">HAPS</span>
+                        <span class="stat-label">Cleaner Alternative</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- World Map Section -->
+            <div class="world-map-section">
+                <h3 class="map-title">Successful Countries Without Space Programs</h3>
+                <p class="map-subtitle">These nations thrive without government space agencies, proving space missions aren't essential for prosperity</p>
+                <div class="map-container" id="world-map">
+                    <div class="map-legend">
+                        <div class="legend-item">
+                            <div class="legend-marker no-space"></div>
+                            <span>No Government Space Agency</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-marker has-space"></div>
+                            <span>Has Space Program</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="country-info" id="country-info">
+                    <p>Click on a highlighted country to learn more about their success without a space program.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Studies Section -->
+        <section class="case-studies-section" id="case-studies">
+            <div class="section-header">
+                <h2 class="section-title case-studies-title">Case Studies & Evidence</h2>
+                <p class="section-subtitle">Real-world examples that demonstrate the impact and complexity of space missions</p>
+            </div>
+            
+            <div class="case-studies-grid">
+                <!-- Planetary Defense -->
+                <div class="case-study-card" data-category="defense">
+                    <div class="case-study-header">
+                        <div class="case-study-icon">🛡️</div>
+                        <h3 class="case-study-title">Planetary Defense Proven</h3>
+                    </div>
+                    <p class="case-study-summary">DART changed Dimorphos's orbit by ~32–33 minutes, validating kinetic-impact deflection.</p>
+                    <div class="case-study-details">
+                        <p>NASA's Double Asteroid Redirection Test (DART) mission successfully demonstrated our ability to deflect potentially hazardous asteroids. The spacecraft impacted the asteroid Dimorphos, changing its orbit by approximately 32-33 minutes, proving that kinetic impact deflection is a viable planetary defense strategy.</p>
+                        <div class="case-study-links">
+                            <a href="https://www.nasa.gov" target="_blank" class="case-study-link">NASA News</a>
+                            <a href="https://www.nasa.gov" target="_blank" class="case-study-link">DART Technical Report</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Asteroid Sample Science -->
+                <div class="case-study-card" data-category="science">
+                    <div class="case-study-header">
+                        <div class="case-study-icon">🔬</div>
+                        <h3 class="case-study-title">Asteroid Sample Science</h3>
+                    </div>
+                    <p class="case-study-summary">OSIRIS-REx returned Bennu material rich in carbon and water-bearing minerals.</p>
+                    <div class="case-study-details">
+                        <p>The OSIRIS-REx mission successfully returned 121.6 grams of material from asteroid Bennu, containing carbon and water-bearing minerals. These samples are providing unprecedented insights into the early solar system and the building blocks of life.</p>
+                        <div class="case-study-links">
+                            <a href="https://www.nasa.gov" target="_blank" class="case-study-link">NASA Press Release</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wildfire Response -->
+                <div class="case-study-card" data-category="infrastructure">
+                    <div class="case-study-header">
+                        <div class="case-study-icon">🔥</div>
+                        <h3 class="case-study-title">Wildfire Response</h3>
+                    </div>
+                    <p class="case-study-summary">GOES-16/17 satellites enabled wildfire detection 10–15 minutes before 911 calls.</p>
+                    <div class="case-study-details">
+                        <p>NOAA's GOES-16 and GOES-17 satellites have proven invaluable for early wildfire detection, providing alerts 10-15 minutes before emergency calls in multiple events. This early warning system enables faster mobilization and response, potentially saving lives and property.</p>
+                        <div class="case-study-links">
+                            <a href="https://www.noaa.gov" target="_blank" class="case-study-link">NOAA/NESDIS Story</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GNSS Outage Economics -->
+                <div class="case-study-card" data-category="economics">
+                    <div class="case-study-header">
+                        <div class="case-study-icon">💰</div>
+                        <h3 class="case-study-title">GNSS Outage Economics</h3>
+                    </div>
+                    <p class="case-study-summary">A 30-day GPS outage would cost the economy ~$1B/day, underscoring space infrastructure's value.</p>
+                    <div class="case-study-details">
+                        <p>U.S. studies estimate that a 30-day GPS outage would cost the economy approximately $1 billion per day, highlighting the critical importance of space-based navigation infrastructure to modern society and economic activity.</p>
+                        <div class="case-study-links">
+                            <a href="https://www.ncbi.nlm.nih.gov" target="_blank" class="case-study-link">PubMed Study</a>
+                            <a href="https://www.rti.org" target="_blank" class="case-study-link">RTI International Report</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- JWST Breakthroughs -->
+                <div class="case-study-card" data-category="science">
+                    <div class="case-study-header">
+                        <div class="case-study-icon">🔭</div>
+                        <h3 class="case-study-title">JWST Breakthroughs vs. Overruns</h3>
+                    </div>
+                    <p class="case-study-summary">Webb's first-year science upended early-galaxy timelines and exoplanet atmospheres despite cost overruns.</p>
+                    <div class="case-study-details">
+                        <p>Despite cost overruns reaching ~$9.7B and multi-year delays, JWST's first-year science has revolutionized our understanding of early galaxies and exoplanet atmospheres, demonstrating both the value and challenges of flagship space missions.</p>
+                        <div class="case-study-links">
+                            <a href="https://www.nasa.gov" target="_blank" class="case-study-link">NASA Webb Highlights</a>
+                            <a href="https://www.gao.gov" target="_blank" class="case-study-link">GAO Cost Report</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Launch Site Environment -->
+                <div class="case-study-card" data-category="environment">
+                    <div class="case-study-header">
+                        <div class="case-study-icon">🌍</div>
+                        <h3 class="case-study-title">Launch Site Environment</h3>
+                    </div>
+                    <p class="case-study-summary">FAA's environmental assessment outlines impacts and mitigations for Starship operations at Boca Chica.</p>
+                    <div class="case-study-details">
+                        <p>The FAA's 2025 Final Tiered Environmental Assessment documents the environmental impacts, required mitigations, and monitoring protocols for Starship operations at Boca Chica, balancing space development with environmental protection.</p>
+                        <div class="case-study-links">
+                            <a href="https://www.faa.gov" target="_blank" class="case-study-link">FAA Environmental Assessment</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Astronomy vs. Mega-constellations -->
+                <div class="case-study-card" data-category="conflict">
+                    <div class="case-study-header">
+                        <div class="case-study-icon">⭐</div>
+                        <h3 class="case-study-title">Astronomy vs. Mega-constellations</h3>
+                    </div>
+                    <p class="case-study-summary">Community-vetted mitigations include satellite brightness limits and trajectory coordination.</p>
+                    <div class="case-study-details">
+                        <p>The astronomical community has developed comprehensive mitigation strategies for mega-constellations, including satellite brightness limits, darker coatings, and trajectory coordination to protect dark skies and scientific observations.</p>
+                        <div class="case-study-links">
+                            <a href="https://www.noirlab.edu" target="_blank" class="case-study-link">SATCON Recommendations</a>
+                            <a href="https://www.iau.org" target="_blank" class="case-study-link">IAU Brightness Guidelines</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Artemis Accords -->
+                <div class="case-study-card" data-category="governance">
+                    <div class="case-study-header">
+                        <div class="case-study-icon">📜</div>
+                        <h3 class="case-study-title">Artemis Accords</h3>
+                    </div>
+                    <p class="case-study-summary">Non-binding principles for safe, transparent lunar and space activity with growing international participation.</p>
+                    <div class="case-study-details">
+                        <p>The Artemis Accords establish non-binding principles for safe, transparent, and sustainable lunar and space activities. With 56+ signatories, they represent a growing international consensus on space governance and cooperation.</p>
+                        <div class="case-study-links">
+                            <a href="https://www.nasa.gov" target="_blank" class="case-study-link">NASA Artemis Accords</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Space Economy -->
+                <div class="case-study-card" data-category="economics">
+                    <div class="case-study-header">
+                        <div class="case-study-icon">📊</div>
+                        <h3 class="case-study-title">Space Economy Growth</h3>
+                    </div>
+                    <p class="case-study-summary">Global space economy reached $613B in 2024 with ~78% commercial share.</p>
+                    <div class="case-study-details">
+                        <p>The space economy has grown to $613 billion globally in 2024, with commercial activities representing approximately 78% of the total. This growth demonstrates the economic viability and increasing commercialization of space activities.</p>
+                        <div class="case-study-links">
+                            <a href="https://www.spacefoundation.org" target="_blank" class="case-study-link">Space Foundation Report</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion Section -->
+        <section class="conclusion-section" id="conclusion">
+            <div class="conclusion-content">
+                <h2 class="conclusion-title">The Verdict</h2>
+                <p class="conclusion-text">
+                    The debate over space missions isn't just about rockets and Mars—it's about how we allocate resources, 
+                    manage risks, and balance immediate needs against long-term aspirations. Both sides raise valid points 
+                    about costs, benefits, and priorities.
+                </p>
+                <div class="conclusion-cta">
+                    <p>What's your take on this cosmic question?</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
