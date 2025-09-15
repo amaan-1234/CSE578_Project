@@ -2,10 +2,6 @@
 
 A modern, interactive debate website exploring the question: **"Are space missions necessary?"** Built with D3.js v7, featuring smooth animations, interactive visualizations, and a comprehensive analysis of both sides of the space exploration debate.
 
-## 🌟 Live Demo
-
-[![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-000000?style=for-the-badge&logo=vercel)](https://cse578-project.vercel.app)
-
 ## ✨ Features
 
 ### 🎨 Visual Design
